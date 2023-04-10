@@ -10,6 +10,5 @@ import Foundation
 public protocol ComponentHandler {
     func action()
    
-    var input: Data { get set }
-    var cache: Data? { get set }
+    var input: Data { get }
 }
