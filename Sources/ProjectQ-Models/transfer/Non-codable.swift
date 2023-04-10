@@ -14,7 +14,7 @@ public struct Task {
     }
     
     public let name: String
-    public let components: [Component]
+    public let components: [Component]?
 }
 
 public struct Package {
