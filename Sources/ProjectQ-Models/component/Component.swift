@@ -8,13 +8,13 @@
 import Foundation
 
 public struct ComponentInformation {
-    public init(name: String, conflictedComponents: [Component]) {
+    public init(name: String, conflictedComponents: [Component]?) {
         self.name = name
         self.conflictedComponents = conflictedComponents
     }
     
     public let name: String
-    public let conflictedComponents: [Component]
+    public let conflictedComponents: [Component]?
 }
 
 public struct ComponentId {
