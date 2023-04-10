@@ -18,6 +18,11 @@ public struct Task {
 }
 
 public struct Package {
+    public init(name: String, tasks: [Task]) {
+        self.name = name
+        self.tasks = tasks
+    }
+    
     public let name: String
     public let tasks: [Task]
 }
