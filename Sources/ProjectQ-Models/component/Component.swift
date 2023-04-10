@@ -8,11 +8,20 @@
 import Foundation
 
 public struct ComponentInformation {
+    public init(name: String, conflictedComponents: [Component]) {
+        self.name = name
+        self.conflictedComponents = conflictedComponents
+    }
+    
     public let name: String
     public let conflictedComponents: [Component]
 }
 
 public struct ComponentId {
+    public init(pureNumber: Int) {
+        self.pureNumber = pureNumber
+    }
+    
     static let none = ComponentId(pureNumber: -1)
     let pureNumber: Int
 }
