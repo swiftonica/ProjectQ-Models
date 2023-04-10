@@ -8,7 +8,7 @@
 import Foundation
 
 public struct Task {
-    public init(name: String, components: [Component]) {
+    public init(name: String, components: [Component]?) {
         self.name = name
         self.components = components
     }
